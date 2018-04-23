@@ -2219,7 +2219,7 @@ Number of pins: &lt;b&gt;3&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <text x="58.42" y="78.74" size="1.778" layer="94" align="bottom-right">GPIO16/!WAKE</text>
 <text x="7.62" y="6.858" size="1.778" layer="94">SKU: ow1</text>
 <text x="7.62" y="12.7" size="2.794" layer="94">1-Wire WeMos</text>
-<text x="81.28" y="6.858" size="1.778" layer="94">V1 (2019-04-22)</text>
+<text x="81.28" y="6.858" size="1.778" layer="94">V1 (2018-04-22)</text>
 <text x="32.766" y="6.858" size="1.778" layer="94">taaralabs.eu/ow1</text>
 <frame x1="5.08" y1="5.08" x2="109.22" y2="17.78" columns="0" rows="0" layer="94" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
 <frame x1="78.74" y1="5.08" x2="109.22" y2="10.16" columns="8" rows="5" layer="94"/>
