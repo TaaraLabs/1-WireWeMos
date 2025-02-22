@@ -1,0 +1,44 @@
+esphome:
+  name: "esphome-ds248x"
+  friendly_name: Onewire
+  min_version: 2024.11.0
+  name_add_mac_suffix: false
+
+esp8266:
+  board: esp01_1m
+
+logger:
+
+api:
+
+ota:
+- platform: esphome
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  fast_connect: true
+
+web_server:
+
+external_components:
+  source: github://mknjc/esphome@ds248x
+  components: [ ds248x ]
+
+i2c:
+  id: i2cbus
+  frequency: 400kHz
+
+ds248x:
+  i2c_id: i2cbus
+  address: 0x18
+  active_pullup: true
+  strong_pullup: false
+  bus_sleep: false
+  update_interval: 30s
+
+sensor:
+  - platform: ds248x
+    address: 0xa6000004eea85328
+    name: "Temperature"
+    resolution: 12
